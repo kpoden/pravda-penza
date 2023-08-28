@@ -1,0 +1,287 @@
+.btn
+    padding: 12px 20px
+    font-weight: 600
+    font-size: 14px
+    cursor: pointer
+    border-radius: 50px
+    transition: .2s
+    display: inline-flex
+    gap: 10px
+    text-align: center
+    position: relative
+    align-items: center
+    justify-content: center
+
+    +mw(1150)
+
+    +mw(750)
+
+    &:hover
+        background: var(--c-yellow--h)
+
+    &:active
+        background: var(--c-yellow--a)
+
+
+
+    &.btn--white
+        background: #fff
+        border: 1.5px solid #272727; 
+
+        &:hover
+            background: #d8d8d8
+
+
+.badge
+    display: inline-flex;
+    height: 26px
+    padding: 8px 16px
+    justify-content: center
+    align-items: center
+    gap: 8px
+    flex-shrink: 0
+    border-radius: 26px
+    background: #FFF
+    color: var(--c-blue)
+    font-family: Inter
+    font-size: 12px
+    font-weight: 700
+    line-height: 130%
+    letter-spacing: -0.12px
+
+    +mw(800)
+        font-size: 10px
+        letter-spacing: -0.1px   
+
+
+.more
+    display: flex
+    gap: 13px
+    align-items: center
+
+    p
+        text-decoration: underline
+        font-size: 24px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.24px
+
+        +mw(800)
+            font-size: 14px
+            letter-spacing: -0.14px
+
+    svg
+        position: relative
+        left: 0
+        transition: .2s ease-in-out
+
+        +mw(800)
+            width: 22px
+            height: 22px
+
+    &:hover
+        svg
+            left: 5px
+
+.arr-btn
+    display: flex
+    align-items: center
+    gap: 13px
+    background: #fff
+    position: relative
+    margin: 35px 0
+    width: fit-content
+    margin-right: 40px
+
+    +mw(800)
+        margin-right: 20px
+
+    &:hover .arr-btn-circle
+        border: 1px solid var(--c-blue)
+
+    p
+        text-decoration: underline
+        font-size: 24px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.24px
+        text-transform: uppercase
+
+        +mw(800)
+            font-size: 12px
+            line-height: 130%
+            letter-spacing: -0.12px
+
+    svg
+        position: relative
+        left: 0
+        transition: .2s ease-in-out
+
+        +mw(800)
+            width: 21px;
+            height: 21px; 
+
+    &:hover
+        svg
+            left: 5px
+
+    .arr-btn-circle
+        width: 114px
+        height: 114px
+        border-radius: 50%
+        position: absolute
+        border: 1px solid var(--c-font)
+        right: -40px
+        z-index: -1
+        transition: .2s
+
+        +mw(800)
+            width: 50px
+            height: 50px
+            right: -18px
+
+
+.slider__arrs
+    display: flex
+    align-items: center
+    gap: 20px
+
+    +mw(800)
+        display: none
+
+    
+    .slider__arr
+        width: 61px
+        height: 61px
+        border-radius: 100px;
+        border: 1px solid var(--c-font)
+        position: relative
+        cursor: pointer
+        transition: .2s
+
+        &:hover
+            color: var(--c-blue)
+            border: 1px solid var(--c-blue)
+
+
+
+        svg
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 43px
+            height: 43px
+            transform-origin: center center
+
+
+
+.dot
+    width: 22px
+    height: 22px
+    display: inline-block
+    border: 2px solid #FFF
+    border-radius: 50px
+    cursor: pointer
+    position: relative
+    transition: .2s
+    flex-shrink: 0
+
+    &::after
+        content: ""
+        position: absolute
+        border-radius: 50px
+        width: 8px
+        height: 8px
+        display: none
+        background: #F9CC49
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+label input[type="radio"]
+    display: none
+
+input[type=radio]:checked ~ .dot
+    border: 2px solid #F9CC49
+
+input[type=radio]:checked ~ .dot::after
+    display: block
+
+
+
+.inp
+    border-radius: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: rgba(255, 255, 255, 0.10);
+    padding: 15px 30px
+    color: #fff
+    font-size: 16px
+    font-family: Raleway
+    font-weight: 500
+    transition: .2s
+
+
+
+.policy__checkbox
+    display: flex
+    flex-wrap: wrap
+    margin-right: auto
+    align-items: center
+    gap: 22px
+    position: relative
+
+.policy__checkbox-input
+    display: none
+
+.policy__checkbox-input:checked ~ .policy__checkbox-square .policy__checkbox-checkmark
+    display: block
+
+.policy__checkbox-checkmark
+    position: absolute
+    width: 12px
+    height: 20px
+    border-top: 4px solid #fff
+    border-left: 4px solid #fff
+    display: none
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-135deg)
+
+    +mw(800)
+        width: 8px
+        height: 14px
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+
+
+.policy__checkbox-square
+    width: 30px
+    height: 30px
+    background: var(--c-blue)
+    position: relative
+    flex-shrink: 0
+
+    +mw(800)
+        width: 24px
+        height: 24px
+
+.policy__checkbox-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 130%
+    letter-spacing: -0.16px
+
+    +mw(800)
+        font-size: 12px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.12px
+
+.policy-err
+    position: absolute
+    top: 40px
+
+        
+

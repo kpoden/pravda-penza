@@ -1,0 +1,187 @@
+.main__header
+    padding-top: 20px
+    padding-bottom: 20px
+    color: #131313
+    font-family: Roboto
+    font-size: 20px
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+    letter-spacing: -0.5px
+
+
+.news__list
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    padding-bottom: 50px
+
+.news__item
+    display: flex
+    gap: 19px
+
+    &.vert-news
+        flex-direction: column
+
+    &.big-news
+        width: 100%
+
+    &.small-news
+        width: calc(50% - 20px)
+
+    &.hor-news
+        .news__img
+            flex: 1
+
+        .news__info
+            flex: 1
+
+
+
+.news
+
+    &__img
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+
+    &__info
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+
+    &__date
+        color:  #9C9C9C
+        font-family: Roboto
+        font-size: 10px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.25px
+        padding-bottom: 5px
+
+    &__title
+        color:  #131313
+        font-family: Roboto
+        font-size: 14px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        letter-spacing: -0.35px
+        padding-bottom: 5px
+        
+    &__text
+        color:  rgba(0, 0, 0, 0.70)
+        font-family: Inter
+        font-size: 12px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        padding-bottom: 5px
+
+    &__link
+        color: #CF0811
+        font-family: Roboto
+        font-size: 14px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        letter-spacing: -0.35px
+        text-decoration-line: underline
+
+
+.secondary__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h2
+        padding-top: 20px
+        padding-bottom: 20px
+        color: #131313
+        font-family: Roboto
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        letter-spacing: -0.5px
+
+.news__slider
+    height: 240px
+    margin-bottom: 66px
+    
+    &.swiper
+        overflow: visible
+
+    &-item
+        padding: 25px
+        display: flex
+        align-items: end
+
+
+    .news__img
+        position: absolute
+        top: 0
+        left: 0
+        max-height: 100%
+        overflow: hidden
+        width: 100%
+
+        &-overflow
+            background:  rgba(0, 0, 0, 0.40)
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+
+
+    .news__info
+        position: relative
+        z-index: 100
+
+    .news__title
+        color: #fff
+    .news__date
+        color: #fff
+    .news__text
+        color: #fff
+    .news__link
+        color: #fff
+
+    .swiper-pagination
+        bottom: -20px
+
+    .swiper-pagination-bullet
+        background: #9C9C9C
+
+    .swiper-pagination-bullet-active
+        background: #131313
+
+
+.news__filters
+    padding-bottom: 20px
+
+.news__filter
+    display: flex
+    padding: 6px 20px
+    justify-content: center
+    align-items: center
+    gap: 10px
+    border-radius: 100px
+    background:  #F2F2F2
+
+    &.active-filter
+        background:#CF0811
+
+        span
+            color: #fff
+
+    
+    span
+        color: rgba(0, 0, 0, 0.70)
+        font-family: Inter
+        font-size: 12px
+        font-style: normal
+        font-weight: 400
+        line-height: normal

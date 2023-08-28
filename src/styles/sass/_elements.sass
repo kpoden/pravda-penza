@@ -1,0 +1,106 @@
+.section-title
+    font-family: HelveticaNeueCyr
+    font-size: 64px
+    font-style: normal
+    font-weight: 400
+    line-height: 100%
+    max-width: 1920px
+    padding: 150px 0 70px
+
+    +mw(1000)
+        font-size: 40px
+
+    +mw(800)
+        padding: 70px 0 30px
+        font-weight: 400
+        line-height: 110%
+
+    +mw(600)
+        font-size: 20px
+
+    &.section-title--wrapped
+        margin: 150px auto 70px
+
+        +mw(1000)
+            padding: 0 50px
+        +mw(600)
+            padding: 0 20px
+
+
+
+
+._locked
+    overflow: hidden
+
+
+.bolder
+    font-weight: bolder
+
+
+.hidden
+    display: none !important
+
+.red
+    color: red
+
+.yellow
+    color: #F9CC49
+
+
+.unvis
+    opacity: 0
+    visibility: hidden
+
+
+
+.eyes
+    position: absolute
+    z-index: 10
+    right: 26px
+    top: 18px
+    width: 22px
+    height: 22px
+    cursor: pointer
+
+    +mw(750)
+        top: 13px
+
+    svg
+        position: absolute
+        transition: .2s
+        
+
+    .eye
+        opacity: 1
+
+    .eye-y
+        opacity: 0
+
+    &.active
+
+        .eye
+            opacity: 0
+
+        .eye-y
+            opacity: 1
+
+
+._error-txt
+    color:  #C00
+    font-size: 12px
+    font-weight: 500
+    display: block
+    padding-top: 5px
+
+
+._error-input
+    border: 1.5px solid #C00 !important
+
+
+
+.banner
+    min-height: 50px
+    border: 0.5px solid #131313
+
+    img
+        width: 100%

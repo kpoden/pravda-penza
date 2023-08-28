@@ -1,0 +1,37 @@
+header.header
+    .header__logo.wrapper
+        svg(width="149" height="29")
+            use(xlink:href="images/sprite.svg#logo")
+
+    .header__main
+        .header__burger
+            svg(width="24" height="24")
+                use(xlink:href="images/sprite.svg#burger")
+
+        .header__info
+            .header__info-item
+                .header__info-item-icon
+                    svg(width="8" height="8")
+                        use(xlink:href="images/sprite.svg#date")
+                p.header__info-item-text 10 сентября
+                    
+            .header__info-item
+                .header__info-item-icon
+                    svg(width="8" height="8")
+                        use(xlink:href="images/sprite.svg#weather")
+                p.header__info-item-text +17
+
+            .header__info-item
+                .header__info-item-icon 
+                    span $
+                p.header__info-item-text 100,00
+
+            .header__info-item
+                .header__info-item-icon 
+                    span €
+                p.header__info-item-text 100,00
+
+        .header__search
+            svg(width="24" height="24")
+                use(xlink:href="images/sprite.svg#search")
+
